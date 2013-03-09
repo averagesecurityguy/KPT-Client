@@ -3,8 +3,9 @@ KnownPlainText
 
 These are the client files needed to connect to the KnownPlainText
 service. Below is the installation instructions, usage, and a list 
-of files included in the repository. If you have any questions please
-contact support@knownplaintext.co
+of files included in the repository. You will need to purchase a 
+license key to use the service. See https://knownplaintext.co for 
+more details. If you have any questions please contact support@knownplaintext.co
 
 Installation
 ------------
@@ -29,7 +30,7 @@ There are two ways to use the client. The first, is to use the -p option and
 provide a file in PWDUMP format. Each line of the file should be in the following 
 format:
 
-    `user:id:lm_hash:ntlm_hash:::`
+    user:id:lm_hash:ntlm_hash:::
 
 If you provide a PWDUMP file then each found password will be matched up to the 
 appropriate username. The username information is not sent to the KnownPlainText 
@@ -38,14 +39,14 @@ server.
 The second way to use the client is to use the -f option and provide a file that 
 contains a list of password hashes in the following format:
 
-    `ntlm_hash:lm_hash`
+    ntlm_hash:lm_hash
 
 If you use the -f option, then each found password will be matched up to the 
 appropriate ntlm_hash.
 
 ### Examples ###
-`client.py -p test.pwdump`
-`client.py -f test.hashes`
+    client.py -p test.pwdump
+    client.py -f test.hashes
 
 Files
 -----
