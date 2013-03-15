@@ -54,4 +54,4 @@ Files
 * `oauth.py` - Oauth library used to authenticate to the KnownPlainText service.
 * `test.pwdump` - A test file used to make sure the service is working.
 * `anonymyze_pwdump.py` - Replaces usernames in the PWDUMP file with generic usernames.
-
+* `kpt.rb` - Metasploit module for KnownPlainText. Must have a working client.
